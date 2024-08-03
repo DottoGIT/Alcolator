@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".PersonCreator">
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Create a user"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.012" />
+
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/custom_plaintext"
+        android:textColor="#222222"
+        android:textColorHint="#888888"
+        android:textAlignment="center"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:lines="1"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="100dp"
+        android:textColor="#222222"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/custom_plaintext"
+        android:textColorHint="#888888"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="numberSigned"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toBottomOf="@+id/Text1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_plaintext"
+        android:ems="10"
+        android:textAlignment="center"
+        android:hint="Weight"
+        android:textColor="#222222"
+        android:textColorHint="#888888"
+        android:inputType="numberSigned"
+        android:lines="1"
+        android:maxLength="3"
+        android:maxLines="1"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintVertical_bias="0.274" />
+
+    <EditText
+        android:id="@+id/editTextNumber4"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_plaintext"
+        android:ems="10"
+        android:hint="Height"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:lines="1"
+        android:maxLength="3"
+        android:maxLines="1"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="@+id/weight"
+        app:layout_constraintTop_toBottomOf="@+id/weight" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/Save"
+        app:layout_constraintEnd_toEndOf="@+id/heightSpinner"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumber4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintVertical_bias="0.806">
+
+        <RadioButton
+            android:id="@+id/Woman"
+            android:width="120dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginRight="60dp"
+            android:textAlignment="center"
+            android:button="@android:color/transparent"
+            android:background="@drawable/custom_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/Man"
+            android:width="120dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:button="@android:color/transparent"
+            android:background="@drawable/custom_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:width="200dp"
+        android:height="48dp"
+        android:background="@drawable/language_button"
+        android:text="Save"
+        android:onClick="SaveButtonClick"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <Spinner
+        android:id="@+id/weightSpinner"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_plaintext"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/weight"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAge"
+        app:layout_constraintTop_toTopOf="@+id/weight" />
+
+    <Spinner
+        android:id="@+id/heightSpinner"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNumber4"
+        android:background="@drawable/custom_plaintext"
+        app:layout_constraintEnd_toEndOf="@+id/weightSpinner"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumber4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="in"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/weight"
+        app:layout_constraintEnd_toStartOf="@+id/weightSpinner"
+        app:layout_constraintStart_toEndOf="@+id/weight"
+        app:layout_constraintTop_toTopOf="@+id/weight" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="in"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNumber4"
+        app:layout_constraintEnd_toStartOf="@+id/heightSpinner"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber4"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumber4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

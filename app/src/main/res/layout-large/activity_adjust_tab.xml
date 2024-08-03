@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".AdjustTab">
+
+
+    <TextView
+        android:id="@+id/speedTxt2"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:paddingEnd="10dp"
+        android:maxLines="1"
+        android:text="Jak szybko wchodzi Ci alkohol"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/speedTxt"
+        app:layout_constraintTop_toBottomOf="@+id/text3"
+        app:layout_constraintVertical_bias="0.634" />
+
+    <TextView
+        android:id="@+id/drunkSpeedInt"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/language_button"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="100%"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/speedTxt2"
+        app:layout_constraintStart_toStartOf="@+id/burnSpeedInt"
+        app:layout_constraintTop_toTopOf="@+id/speedTxt2" />
+
+    <SeekBar
+        android:id="@+id/seekBar4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speedTxt2"
+        android:thumbTint="#FF9800"
+        android:progress="5"
+        android:progressTint="#E17327"
+        android:max="10" />
+
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="44dp"
+        android:width="120dp"
+        android:height="48dp"
+        android:background="@drawable/language_button"
+        android:text="Zapisz"
+        android:textColor="#fff"
+        android:autoSizeTextType="uniform"
+        android:onClick="SaveBtn"
+        android:textStyle="bold"
+        android:padding="10dp"
+        app:backgroundTint="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/speedTxt"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="Szybkosć trzeźwienia"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/speedTxt2"
+        app:layout_constraintStart_toStartOf="@+id/tolerance"
+        app:layout_constraintTop_toBottomOf="@+id/text3"
+        app:layout_constraintVertical_bias="0.652" />
+
+    <TextView
+        android:id="@+id/burnSpeedInt"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/language_button"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="100%"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/speedTxt"
+        app:layout_constraintStart_toStartOf="@+id/toleranceInt"
+        app:layout_constraintTop_toTopOf="@+id/speedTxt" />
+
+    <SeekBar
+        android:id="@+id/seekBar3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speedTxt"
+        android:thumbTint="#FF9800"
+        android:progress="5"
+        android:progressTint="#E17327"
+        android:max="10" />
+
+    <TextView
+        android:id="@+id/tolerance"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:paddingEnd="30dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="Twoja tolerancja"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/savebtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text3"
+        app:layout_constraintVertical_bias="0.085" />
+
+    <TextView
+        android:id="@+id/toleranceInt"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/language_button"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:text="100%"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/tolerance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tolerance" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Ustawienia"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tolerance"
+        android:thumbTint="#FF9800"
+        android:progress="5"
+        android:progressTint="#E17327"
+        android:max="10"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="300dp"
+        android:layout_height="229dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121"
+        app:srcCompat="@drawable/logo"
+        />
+
+    <Button
+        android:id="@+id/alcolatorBtn"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/custom_button"
+        android:onClick="AlcolatorClick"
+        android:text="Rozpocznij!"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:backgroundTint="#FF9800"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/kociolBtn"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:onClick="MoreClick"
+        android:background="@drawable/custom_button"
+        android:text="Więcej"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#E17327"
+        app:layout_constraintBottom_toTopOf="@+id/zapisaneBtn"
+        app:layout_constraintEnd_toEndOf="@+id/alcolatorBtn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/alcolatorBtn"
+        app:layout_constraintTop_toBottomOf="@+id/alcolatorBtn"
+        app:layout_constraintVertical_bias="0.553" />
+
+    <Button
+        android:id="@+id/zapisaneBtn"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_button"
+        android:text="Dostosuj"
+        android:textSize="20sp"
+        app:backgroundTint="#C7594B"
+        android:textColor="#FFFFFF"
+        android:onClick="AdjustButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/kociolBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/kociolBtn"
+        app:layout_constraintTop_toBottomOf="@+id/kociolBtn" />
+
+    <Button
+        android:id="@+id/tipBtn"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:width="120dp"
+        android:height="48dp"
+        android:background="@drawable/language_button"
+        android:text="Napiwek"
+        android:onClick="DonateClick"
+        android:textColor="#fff"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFC107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/languageButton"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:width="125dp"
+        android:height="45dp"
+        android:background="@drawable/language_button"
+        android:drawableLeft="@drawable/ic_poland"
+        android:onClick="LanguageButtonClick"
+        android:text="pl"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#FFFFFF"
+        app:backgroundTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zapisaneBtn">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingStart="10dp"
+            app:srcCompat="@drawable/ic_heart" />
+
+        <TextView
+            android:id="@+id/donationTxt"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:autoSizeTextType="uniform"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Dzięki za wsparcie!"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingEnd="10dp"
+            app:srcCompat="@drawable/ic_heart" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

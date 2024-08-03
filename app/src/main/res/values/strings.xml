@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PartyCounter</string>
+    <string name="logoImage">TODO</string>
+    <string name="alcolator">Alcolator</string>
+    <string name="koci_ek">Kociłek</string>
+    <string name="zapisane">Zapisane</string>
+    <string name="kocio_ek">kociołek</string>
+    <string name="donate">Donate</string>
+    <string name="pl">PL</string>
+    <string name="tip">Tip</string>
+    <string name="languageSelect">TODO</string>
+    <string name="napiwek">Napiwek</string>
+    <string name="settings">Settings</string>
+    <string name="eng">ENG</string>
+    <string name="dodaj">Dodaj</string>
+    <string-array name="weights">
+        <item>kg</item>
+        <item>lb</item>
+    </string-array>
+
+    <string-array name="heights">
+        <item>cm</item>
+        <item>inches</item>
+    </string-array>
+</resources>

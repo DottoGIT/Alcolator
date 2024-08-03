@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".AdditionalInfo">
+
+    <TextView
+        android:id="@+id/text11"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Koniec"
+        android:textColor="#FFFFFF"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/weight9"
+        app:layout_constraintEnd_toStartOf="@+id/weight9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/weight9" />
+
+    <TextView
+        android:id="@+id/text10"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Start"
+        android:textColor="#FFFFFF"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/weight5"
+        app:layout_constraintStart_toStartOf="@+id/text11"
+        app:layout_constraintTop_toTopOf="@+id/weight5" />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/weight9"
+        app:layout_constraintEnd_toStartOf="@+id/weight10"
+        app:layout_constraintStart_toEndOf="@+id/weight9"
+        app:layout_constraintTop_toTopOf="@+id/weight9" />
+
+    <TextView
+        android:id="@+id/text9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/weight5"
+        app:layout_constraintEnd_toStartOf="@+id/weight6"
+        app:layout_constraintStart_toEndOf="@+id/weight5"
+        app:layout_constraintTop_toTopOf="@+id/weight5" />
+
+    <EditText
+        android:id="@+id/weight9"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_plaintext"
+        android:ems="10"
+        android:hint="2"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/text7"
+        app:layout_constraintEnd_toEndOf="@+id/weight5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/weight5"
+        app:layout_constraintTop_toBottomOf="@+id/Text1"
+        app:layout_constraintVertical_bias="0.691" />
+
+    <EditText
+        android:id="@+id/weight10"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_plaintext"
+        android:ems="10"
+        android:textColor="#222222"
+        android:text="00"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/weight9"
+        app:layout_constraintEnd_toEndOf="@+id/weight6"
+        app:layout_constraintHorizontal_bias="0.819"
+        app:layout_constraintStart_toStartOf="@+id/weight6"
+        app:layout_constraintTop_toTopOf="@+id/weight9" />
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:autoSizeTextType="uniform"
+        android:justificationMode="inter_word"
+        android:text="*Podaj okres czasu od rozpoczęcia picia do ostatniego łyku, program uznaje, że będziesz spożywał alkohol równomiernie przez  dany czas."
+        android:textColor="#BBB"
+        app:layout_constraintBottom_toTopOf="@+id/Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/weight6"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_plaintext"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        app:layout_constraintBottom_toBottomOf="@+id/weight5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/weight5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:text="Jak długo będziesz pił?"
+        android:textColor="#FFFFFF"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Czy będziesz głodny?"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/text6"
+        app:layout_constraintEnd_toEndOf="@+id/Text1"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/Text1"
+        app:layout_constraintTop_toBottomOf="@+id/Text1"
+        app:layout_constraintVertical_bias="0.613" />
+
+    <EditText
+        android:id="@+id/weight5"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_plaintext"
+        android:ems="10"
+        android:hint="19"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/text7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text1"
+        app:layout_constraintVertical_bias="0.201" />
+
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:width="200dp"
+        android:height="48dp"
+        android:background="@drawable/language_button"
+        android:text="Podsumuj!"
+        android:onClick="SummariseClick"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/text6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text7"
+        app:layout_constraintVertical_bias="0.312">
+
+        <RadioButton
+            android:id="@+id/tak"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:width="100dp"
+            android:background="@drawable/custom_radio"
+            android:button="@android:color/transparent"
+            android:text="Tak"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:autoSizeTextType="uniform" />
+
+        <RadioButton
+            android:id="@+id/nie"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:width="100dp"
+            android:background="@drawable/custom_radio"
+            android:button="@android:color/transparent"
+            android:text="Nie"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:autoSizeTextType="uniform"/>
+
+        <RadioButton
+            android:id="@+id/WillBeFull"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:width="120dp"
+            android:background="@drawable/custom_radio"
+            android:button="@android:color/transparent"
+            android:text="Będę pełny"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:autoSizeTextType="uniform"/>
+
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

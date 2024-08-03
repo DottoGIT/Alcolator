@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.partycounter">
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/iconmy_round"
+        android:label="Alkolator"
+        android:roundIcon="@mipmap/iconmy_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PartyCounter">
+        <activity android:name=".WarningTab"></activity>
+        <activity android:name=".DonateTab" />
+        <activity android:name=".AdjustTab" />
+        <activity android:name=".SoberAtAdditionalInfo" />
+        <activity
+            android:name=".PunchLator"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".MoreOptions" />
+        <activity android:name=".AdditionalInfo" />
+        <activity android:name=".AlcolatorSummary" />
+        <activity
+            android:name=".ChooseDrinks"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".PersonCreator" />
+        <activity android:name=".ChoosePerson" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

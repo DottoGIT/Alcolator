@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="306dp"
+        android:layout_height="229dp"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/logoImage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/alcolatorBtn"
+        android:onClick="AlcolatorClick"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/custom_button"
+        android:text="alkolator"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:backgroundTint="#FF9800"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/kociolBtn"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/kocio_ek"
+        android:textSize="20sp"
+        app:backgroundTint="#E17327"
+        app:layout_constraintBottom_toTopOf="@+id/zapisaneBtn"
+        app:layout_constraintEnd_toEndOf="@+id/alcolatorBtn"
+        app:layout_constraintStart_toStartOf="@+id/alcolatorBtn"
+        app:layout_constraintTop_toBottomOf="@+id/alcolatorBtn"
+        app:layout_constraintVertical_bias="0.553" />
+
+    <Button
+        android:id="@+id/zapisaneBtn"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_button"
+        android:text="Twoje Trunki"
+        android:textSize="20sp"
+        app:backgroundTint="#C7594B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/kociolBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/kociolBtn"
+        app:layout_constraintTop_toBottomOf="@+id/kociolBtn" />
+
+    <Button
+        android:id="@+id/tipBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:width="120dp"
+        android:height="48dp"
+        android:background="@drawable/language_button"
+        android:text="Napiwek"
+        android:textColor="#fff"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFC107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/languageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:width="125dp"
+        android:height="45dp"
+        android:background="@drawable/language_button"
+        android:drawableLeft="@drawable/ic_poland"
+        android:onClick="LanguageButtonClick"
+        android:text="pl"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFFFFF"
+        app:backgroundTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

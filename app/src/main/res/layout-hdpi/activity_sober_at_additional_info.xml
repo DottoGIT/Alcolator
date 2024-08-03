@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SoberAtAdditionalInfo"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:id="@+id/text20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/weight15"
+        app:layout_constraintEnd_toStartOf="@+id/weight16"
+        app:layout_constraintStart_toEndOf="@+id/weight15"
+        app:layout_constraintTop_toTopOf="@+id/weight15" />
+
+    <EditText
+        android:id="@+id/weight15"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_plaintext"
+        android:ems="10"
+        android:hint="6"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toBottomOf="@+id/text18"
+        app:layout_constraintEnd_toStartOf="@+id/text12"
+        app:layout_constraintStart_toStartOf="@+id/weight12"
+        app:layout_constraintTop_toTopOf="@+id/text18" />
+
+    <EditText
+        android:id="@+id/weight16"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_plaintext"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:gravity="center"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        app:layout_constraintBottom_toBottomOf="@+id/weight15"
+        app:layout_constraintEnd_toEndOf="@+id/weight11"
+        app:layout_constraintTop_toTopOf="@+id/weight15" />
+
+    <TextView
+        android:id="@+id/text19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/weight8"
+        app:layout_constraintEnd_toStartOf="@+id/weight7"
+        app:layout_constraintStart_toEndOf="@+id/weight8"
+        app:layout_constraintTop_toTopOf="@+id/weight8" />
+
+    <TextView
+        android:id="@+id/text18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O której?"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/save"
+        app:layout_constraintStart_toStartOf="@+id/text17"
+        app:layout_constraintTop_toBottomOf="@+id/text17" />
+
+    <TextView
+        android:id="@+id/text17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ile promili?"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/save"
+        app:layout_constraintStart_toStartOf="@+id/text15"
+        app:layout_constraintTop_toBottomOf="@+id/text15"
+        app:layout_constraintVertical_bias="0.475" />
+
+    <EditText
+        android:id="@+id/weight13"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_plaintext"
+        android:ems="10"
+        android:maxLength="4"
+        android:maxLines="1"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:hint="0"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toBottomOf="@+id/text17"
+        app:layout_constraintEnd_toEndOf="@+id/weight16"
+        app:layout_constraintStart_toStartOf="@+id/weight15"
+        app:layout_constraintTop_toTopOf="@+id/text17" />
+
+    <EditText
+        android:id="@+id/weight7"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/custom_plaintext"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:gravity="center"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        app:layout_constraintBottom_toBottomOf="@+id/weight8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/weight8"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/weight8"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_plaintext"
+        android:ems="10"
+        android:gravity="center"
+        android:layout_marginStart="70dp"
+        android:hint="19"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toBottomOf="@+id/text16"
+        app:layout_constraintStart_toEndOf="@+id/text16"
+        app:layout_constraintTop_toTopOf="@+id/text16"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/weight12"
+        app:layout_constraintEnd_toStartOf="@+id/weight11"
+        app:layout_constraintStart_toEndOf="@+id/weight12"
+        app:layout_constraintTop_toTopOf="@+id/weight12" />
+
+    <TextView
+        android:id="@+id/text13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/weight8"
+        app:layout_constraintEnd_toStartOf="@+id/weight7"
+        app:layout_constraintStart_toEndOf="@+id/weight8"
+        app:layout_constraintTop_toTopOf="@+id/weight8" />
+
+
+    <TextView
+        android:id="@+id/text14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Jak długo będziesz pił?"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Koniec"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/save"
+        app:layout_constraintStart_toStartOf="@+id/text16"
+        app:layout_constraintTop_toBottomOf="@+id/text16"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Start"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="@+id/text14"
+        app:layout_constraintTop_toBottomOf="@+id/text14" />
+
+    <EditText
+        android:id="@+id/weight11"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_plaintext"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:gravity="center"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        app:layout_constraintBottom_toBottomOf="@+id/weight12"
+        app:layout_constraintEnd_toEndOf="@+id/weight7"
+        app:layout_constraintTop_toTopOf="@+id/weight12" />
+
+    <EditText
+        android:id="@+id/weight12"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_plaintext"
+        android:ems="10"
+        android:hint="2"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toBottomOf="@+id/text15"
+        app:layout_constraintEnd_toEndOf="@+id/weight8"
+        app:layout_constraintTop_toTopOf="@+id/text15" />
+
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:width="200dp"
+        android:height="48dp"
+        android:background="@drawable/language_button"
+        android:text="Podsumuj!"
+        android:onClick="SummariseClick"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/text17"
+        app:layout_constraintTop_toBottomOf="@+id/weight12" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
